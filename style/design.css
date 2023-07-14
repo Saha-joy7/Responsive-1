@@ -24,7 +24,7 @@ box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.10);
 .left-title{
     color: var(--gray-1, #333); 
     font-size: 44px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
 }
 .left-description{
@@ -41,4 +41,18 @@ button{
 .container-right-site{
     margin-right: 40px;
     padding: 30px;
+}
+@media screen and (max-width: 576px){
+    .container{
+        flex-direction: column;
+        height: 70%;
+    }
+    .left-title{
+        font-size: 180%;
+    }
+    small,
+    .left-description{
+        font-size: 120%;
+    }
+    
 }
